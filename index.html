@@ -35,8 +35,108 @@
     </script>
   </head>
   <body>
-    <h1 class="text-center mt-5">Bienvenida a mi tienda online</h1>
-
+    <!-- ============ PASO 2: NAVBAR RESPONSIVO ============ -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark shadow-lg py-3"
+      style="background: #0b1220"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> NovaSmart </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNav"
+          aria-controls="menuNav"
+          aria-expanded="false"
+          aria-label="Abrir el menú de navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Categorías</a
+              >
+              <ul class="dropdown-menu dropdown-menu-end rounded-xl shadow-lg">
+                <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                <li><a class="dropdown-item" href="#">Audio</a></li>
+                <li><a class="dropdown-item" href="#">Smartwatch</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Ofertas
+                <span class="badge rounded-pill bg-danger">-40%</span></a
+              >
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a
+                class="btn btn-sm text-white rounded-xl shadow-lg px-3"
+                style="background: #0fb98b"
+                href="#"
+              >
+                Carrito <span class="badge bg-white text-dark">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ============ PASO 3: HERO SECTION ============ -->
+    <section
+      class="text-white py-5"
+      style="background-image: linear-gradient(to right, #4338ca, #7c8cf8)"
+    >
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span
+              class="badge rounded-pill mb-3 px-3 py-2"
+              style="background: #0fb98b"
+              >Envío gratis desde S/ 199</span
+            >
+            <h1 class="display-3 fw-bold text-balance max-w-3xl mb-3">
+              Tu próximo smartphone, sin pagarlo todo de golpe
+            </h1>
+            <p class="lead mb-4" style="max-width: 48ch">
+              Equipos con garantía oficial, hasta 12 cuotas sin intereses y
+              entrega en 48 horas en todo el Perú.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a
+                href="#"
+                class="btn btn-light btn-lg rounded-xl shadow-lg fw-semibold"
+                >Ver catálogo</a
+              >
+              <a href="#" class="btn btn-outline-light btn-lg rounded-xl"
+                >Consultar stock</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div
+              class="rounded-2xl shadow-lg d-grid place-items-center"
+              style="
+                height: 280px;
+                background: linear-gradient(135deg, #eef2ff, #c7d2fe);
+              "
+            >
+              <span style="font-size: 4rem">📱</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap 5.3.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
